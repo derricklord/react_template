@@ -1,5 +1,5 @@
 import React from 'react';
-import {RouteHanndler,Link, Route, Router} from 'react-router';
+import {RouteHandler, Link, Route, Router, browserHistory} from 'react-router';
 import App from '../components/app';
 import Audience from '../components/audience';
 import Board from '../components/board';
@@ -7,7 +7,7 @@ import Speaker from '../components/speaker';
 import Meeting from '../components/meeting';
 
 const Routes = (
-    <Router>
+    <Router history={browserHistory}>
         <Route path="/" component={App}>
             <Route path="audience" component={Audience} />
             <Route path="board" component={Board} />

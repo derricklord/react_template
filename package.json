@@ -4,17 +4,19 @@
   "main": "index.js",
   "scripts": {
     "production": "webpack -p",
-    "bundle": "webpack --progress --colors --watch",
-    "serve": "nodemon server.js ",
-    "start": "npm run serve & npm run bundle ",
+    "bundle": "webpack --progress --colors --watch -p",
+    "serve": "nodemon server.js",
+    "start": "npm run serve",
     "poststart": ""
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^3.3.6",
+    "compression": "^1.6.1",
     "express": "^4.13.4",
     "history": "^2.0.1",
+    "path": "^0.12.7",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
     "react-router": "^2.0.1",

@@ -1,7 +1,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {RouteHanndler,Link, Route, Router} from 'react-router';
+import {RouteHandler, Link, Route, Router} from 'react-router';
 import App from './components/app';
 import Audience from './components/audience';
 import Board from './components/board';
